@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web." />
+  <title>Vercel: Build and deploy the best web experiences with the AI Cloud</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 76 65'><path fill='white' d='M37.5274 0L75.0548 65H0L37.5274 0Z'/></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--
+  ╔══════════════════════════════════════════════════════╗
+  ║  1. NAVBAR                                           ║
+  ╚══════════════════════════════════════════════════════╝
+  -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="/" class="navbar__logo" aria-label="Vercel — go to homepage">
+        <svg width="21" height="21" viewBox="0 0 76 65" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" />
+        </svg>
+        <span>Vercel</span>
+      </a>
+
+      <!-- Primary navigation -->
+      <nav class="navbar__nav" id="navMenu" aria-label="Main navigation">
+        <a href="#" class="navbar__link">
+          Products
+          <svg class="navbar__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <polyline points="4 6 8 10 12 6"/>
+          </svg>
+        </a>
+        <a href="#" class="navbar__link">
+          Resources
+          <svg class="navbar__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <polyline points="4 6 8 10 12 6"/>
+          </svg>
+        </a>
+        <a href="#" class="navbar__link">
+          Solutions
+          <svg class="navbar__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <polyline points="4 6 8 10 12 6"/>
+          </svg>
+        </a>
+        <a href="#" class="navbar__link">Enterprise</a>
+        <a href="#" class="navbar__link">Pricing</a>
+      </nav>
+
+      <!-- Right-side auth buttons -->
+      <div class="navbar__actions">
+        <a href="#" class="navbar__btn-ghost">Log In</a>
+        <a href="#" class="navbar__btn-outline">Ask AI</a>
+        <a href="#" class="navbar__btn-primary">Sign Up</a>
+      </div>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="navbar__burger" id="navBurger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__burger-bar"></span>
+        <span class="navbar__burger-bar"></span>
+        <span class="navbar__burger-bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!--
+    ╔══════════════════════════════════════════════════════╗
+    ║  2. HERO                                             ║
+    ╚══════════════════════════════════════════════════════╝
+    -->
+    <section class="hero" id="hero" aria-label="Hero">
+
+      <!-- CSS grid lines (background texture) -->
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <!-- Rainbow conic glow -->
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <!-- Vertical column guide lines -->
+      <div class="hero__columns" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- Horizontal bounding rules + corner marks -->
+      <div class="hero__rule hero__rule--top" aria-hidden="true">
+        <span class="hero__corner hero__corner--left">+</span>
+        <span class="hero__corner hero__corner--right">+</span>
+      </div>
+      <div class="hero__rule hero__rule--bottom" aria-hidden="true">
+        <span class="hero__corner hero__corner--left">+</span>
+        <span class="hero__corner hero__corner--right">+</span>
+      </div>
+
+      <!-- Main headline content -->
+      <div class="hero__content fade-target">
+        <h1 class="hero__title">
+          Build and deploy on<br />the AI&nbsp;Cloud.
+        </h1>
+        <p class="hero__subtitle">
+          Vercel provides the developer tools and cloud infrastructure to build,<br class="hero__br" />
+          scale, and secure a faster, more personalized web.
+        </p>
+        <div class="hero__cta-group">
+          <a href="#" class="btn btn--white btn--pill">
+            <svg width="13" height="13" viewBox="0 0 76 65" fill="currentColor" aria-hidden="true">
+              <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" />
+            </svg>
+            Start Deploying
+          </a>
+          <a href="#" class="btn btn--dark btn--pill">Get a Demo</a>
+        </div>
+      </div>
+
+      <!-- Striped / hatched triangle — Vercel's signature mark -->
+      <div class="hero__triangle" aria-hidden="true">
+        <svg viewBox="0 0 320 278" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="hero-tri-clip">
+              <polygon points="160,2 318,276 2,276" />
+            </clipPath>
+          </defs>
+          <!-- Outer border -->
+          <polygon
+            points="160,2 318,276 2,276"
+            fill="none"
+            stroke="rgba(255,255,255,0.52)"
+            stroke-width="1.5"
+          />
+          <!-- Horizontal stripes clipped inside triangle -->
+          <g clip-path="url(#hero-tri-clip)">
+            <line x1="0" y1="22"  x2="320" y2="22"  stroke="rgba(255,255,255,0.46)" stroke-width="1.2"/>
+            <line x1="0" y1="42"  x2="320" y2="42"  stroke="rgba(255,255,255,0.43)" stroke-width="1.2"/>
+            <line x1="0" y1="62"  x2="320" y2="62"  stroke="rgba(255,255,255,0.39)" stroke-width="1.2"/>
+            <line x1="0" y1="82"  x2="320" y2="82"  stroke="rgba(255,255,255,0.36)" stroke-width="1.2"/>
+            <line x1="0" y1="102" x2="320" y2="102" stroke="rgba(255,255,255,0.32)" stroke-width="1.2"/>
+            <line x1="0" y1="122" x2="320" y2="122" stroke="rgba(255,255,255,0.29)" stroke-width="1.2"/>
+            <line x1="0" y1="142" x2="320" y2="142" stroke="rgba(255,255,255,0.25)" stroke-width="1.2"/>
+            <line x1="0" y1="162" x2="320" y2="162" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+            <line x1="0" y1="182" x2="320" y2="182" stroke="rgba(255,255,255,0.18)" stroke-width="1.2"/>
+            <line x1="0" y1="202" x2="320" y2="202" stroke="rgba(255,255,255,0.15)" stroke-width="1.2"/>
+            <line x1="0" y1="222" x2="320" y2="222" stroke="rgba(255,255,255,0.11)" stroke-width="1.2"/>
+            <line x1="0" y1="242" x2="320" y2="242" stroke="rgba(255,255,255,0.08)" stroke-width="1.2"/>
+            <line x1="0" y1="262" x2="320" y2="262" stroke="rgba(255,255,255,0.05)" stroke-width="1.2"/>
+          </g>
+        </svg>
+      </div>
+
+    </section><!-- /hero -->
+
+
+    <!--
+    ╔══════════════════════════════════════════════════════╗
+    ║  3. STATIC TEXT BLOCK                                ║
+    ║  "Develop with your favorite tools ›_                ║
+    ║   Launch globally, instantly ⊕  Keep pushing ⌥"     ║
+    ║  Framed with horizontal rules + corner + marks       ║
+    ╚══════════════════════════════════════════════════════╝
+    -->
+    <section class="taglines" aria-label="Platform highlights">
+      <div class="taglines__frame">
+
+        <!-- top rule with corner marks -->
+        <div class="taglines__rule" aria-hidden="true">
+          <span class="taglines__corner taglines__corner--left">+</span>
+          <span class="taglines__corner taglines__corner--right">+</span>
+        </div>
+
+        <!-- the two lines of text, centered, exactly as on vercel.com -->
+        <div class="taglines__body">
+          <p class="taglines__line">Develop with your favorite tools <span class="taglines__sym">›_</span></p>
+          <p class="taglines__line">Launch globally, instantly <span class="taglines__sym">⊕</span> Keep pushing <span class="taglines__sym">⌥.</span></p>
+        </div>
+
+        <!-- bottom rule with corner marks -->
+        <div class="taglines__rule" aria-hidden="true">
+          <span class="taglines__corner taglines__corner--left">+</span>
+          <span class="taglines__corner taglines__corner--right">+</span>
+        </div>
+
+      </div>
+    </section><!-- /taglines -->
+
+
+    <!--
+    ╔══════════════════════════════════════════════════════╗
+    ║  4. SCALE HEADLINE + 5. DUAL CTA CARDS              ║
+    ╚══════════════════════════════════════════════════════╝
+    -->
+    <section class="scale" aria-labelledby="scale-headline">
+      <div class="scale__inner">
+
+        <!-- "Scale your [Enterprise] without compromising [Security]" -->
+        <h2 class="scale__headline fade-target" id="scale-headline">
+          <span class="scale__word">Scale your</span>
+          <a href="#" class="scale__pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 3H8L6 7h12l-2-4z"/>
+            </svg>
+            Enterprise
+          </a>
+          <span class="scale__word">without compromising</span>
+          <a href="#" class="scale__pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            Security
+          </a>
+        </h2>
+
+        <!-- Dual CTA cards -->
+        <div class="cta-cards fade-target" role="group" aria-label="Get started options">
+
+          <!-- Corner marks on outer frame -->
+          <span class="cta-cards__corner cta-cards__corner--tl" aria-hidden="true">+</span>
+          <span class="cta-cards__corner cta-cards__corner--tr" aria-hidden="true">+</span>
+          <span class="cta-cards__corner cta-cards__corner--bl" aria-hidden="true">+</span>
+          <span class="cta-cards__corner cta-cards__corner--br" aria-hidden="true">+</span>
+
+          <!-- Left card -->
+          <article class="cta-card cta-card--left">
+            <p class="cta-card__title">
+              <strong>Ready to deploy?</strong>
+              Start building with a free account.
+            </p>
+            <p class="cta-card__body">
+              Speak to an expert for your
+              <a href="#" class="cta-card__link cta-card__link--blue">Pro</a>
+              or
+              <a href="#" class="cta-card__link cta-card__link--purple">Enterprise</a>
+              needs.
+            </p>
+            <div class="cta-card__actions">
+              <a href="#" class="btn btn--white btn--sm">Start Deploying</a>
+              <a href="#" class="btn btn--dark-border btn--sm">Talk to an Expert</a>
+            </div>
+          </article>
+
+          <!-- Right card -->
+          <article class="cta-card cta-card--right">
+            <p class="cta-card__title">
+              <strong>Explore Vercel Enterprise</strong>
+              with an interactive product tour, trial, or a personalized demo.
+            </p>
+            <a href="#" class="btn btn--dark-border btn--sm cta-card__ent-btn">Explore Enterprise</a>
+          </article>
+
+        </div><!-- /cta-cards -->
+
+      </div>
+    </section><!-- /scale -->
+
+  </main><!-- /main -->
+
+
+  <!--
+  ╔══════════════════════════════════════════════════════╗
+  ║  6. FOOTER                                           ║
+  ╚══════════════════════════════════════════════════════╝
+  -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+
+      <!-- Row 1: six main columns -->
+      <div class="footer__grid footer__grid--row1">
+
+        <div class="footer__col">
+          <h3 class="footer__heading">GET STARTED</h3>
+          <nav aria-label="Get started links">
+            <a href="#" class="footer__link">Templates</a>
+            <a href="#" class="footer__link">Supported frameworks</a>
+            <a href="#" class="footer__link">Marketplace</a>
+            <a href="#" class="footer__link">Domains</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">BUILD</h3>
+          <nav aria-label="Build links">
+            <a href="#" class="footer__link">Next.js on Vercel</a>
+            <a href="#" class="footer__link">Turborepo</a>
+            <a href="#" class="footer__link">v0</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">SCALE</h3>
+          <nav aria-label="Scale links">
+            <a href="#" class="footer__link">Content delivery network</a>
+            <a href="#" class="footer__link">Fluid compute</a>
+            <a href="#" class="footer__link">CI/CD</a>
+            <a href="#" class="footer__link">Observability</a>
+            <a href="#" class="footer__link">AI Gateway <span class="footer__badge">New</span></a>
+            <a href="#" class="footer__link">Vercel Agent <span class="footer__badge">New</span></a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">SECURE</h3>
+          <nav aria-label="Security links">
+            <a href="#" class="footer__link">Platform security</a>
+            <a href="#" class="footer__link">Web Application Firewall</a>
+            <a href="#" class="footer__link">Bot management</a>
+            <a href="#" class="footer__link">BotID</a>
+            <a href="#" class="footer__link">Sandbox <span class="footer__badge">New</span></a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">RESOURCES</h3>
+          <nav aria-label="Resources links">
+            <a href="#" class="footer__link">Pricing</a>
+            <a href="#" class="footer__link">Customers</a>
+            <a href="#" class="footer__link">Enterprise</a>
+            <a href="#" class="footer__link">Articles</a>
+            <a href="#" class="footer__link">Startups</a>
+            <a href="#" class="footer__link">Solution partners</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">LEARN</h3>
+          <nav aria-label="Learn links">
+            <a href="#" class="footer__link">Docs</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="#" class="footer__link">Changelog</a>
+            <a href="#" class="footer__link">Knowledge Base</a>
+            <a href="#" class="footer__link">Academy</a>
+            <a href="#" class="footer__link">Community</a>
+          </nav>
+        </div>
+
+      </div><!-- /row1 -->
+
+      <hr class="footer__divider" aria-hidden="true" />
+
+      <!-- Row 2: six lower columns -->
+      <div class="footer__grid footer__grid--row2">
+
+        <div class="footer__col">
+          <h3 class="footer__heading">FRAMEWORKS</h3>
+          <nav aria-label="Frameworks links">
+            <a href="#" class="footer__link">Next.js</a>
+            <a href="#" class="footer__link">Nuxt</a>
+            <a href="#" class="footer__link">Svelte</a>
+            <a href="#" class="footer__link">Nitro</a>
+            <a href="#" class="footer__link">Turbo</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">SDKS</h3>
+          <nav aria-label="SDKs links">
+            <a href="#" class="footer__link">AI SDK</a>
+            <a href="#" class="footer__link">Workflow DevKit <span class="footer__badge">New</span></a>
+            <a href="#" class="footer__link">Flags SDK</a>
+            <a href="#" class="footer__link">Chat SDK</a>
+            <a href="#" class="footer__link">Streamdown AI <span class="footer__badge">New</span></a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">USE CASES</h3>
+          <nav aria-label="Use cases links">
+            <a href="#" class="footer__link">Composable commerce</a>
+            <a href="#" class="footer__link">Multi-tenant platforms</a>
+            <a href="#" class="footer__link">Web apps</a>
+            <a href="#" class="footer__link">Marketing sites</a>
+            <a href="#" class="footer__link">Platform engineers</a>
+            <a href="#" class="footer__link">Design engineers</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">COMPANY</h3>
+          <nav aria-label="Company links">
+            <a href="#" class="footer__link">About</a>
+            <a href="#" class="footer__link">Careers</a>
+            <a href="#" class="footer__link">Help</a>
+            <a href="#" class="footer__link">Press</a>
+            <a href="#" class="footer__link">Legal</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">COMMUNITY</h3>
+          <nav aria-label="Community links">
+            <a href="#" class="footer__link">Open source program</a>
+            <a href="#" class="footer__link">Events</a>
+            <a href="#" class="footer__link">Shipped on Vercel</a>
+            <a href="#" class="footer__link footer__link--social">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="footer__link footer__link--social">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              X
+            </a>
+            <a href="#" class="footer__link footer__link--social">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.779 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/></svg>
+              LinkedIn
+            </a>
+            <a href="#" class="footer__link footer__link--social">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.54 3.6 12 3.6 12 3.6s-7.54 0-9.38.45A3.02 3.02 0 00.5 6.19C.06 8.04 0 12 0 12s.06 3.96.5 5.81a3.02 3.02 0 002.12 2.14C4.46 20.4 12 20.4 12 20.4s7.54 0 9.38-.45a3.02 3.02 0 002.12-2.14C24 15.96 24 12 24 12s-.06-3.96-.5-5.81zM9.54 15.57V8.43L15.82 12l-6.28 3.57z"/></svg>
+              YouTube
+            </a>
+          </nav>
+        </div>
+
+        <!-- Vercel triangle logo (bottom-right of footer) -->
+        <div class="footer__col footer__col--logo">
+          <a href="/" class="footer__logo" aria-label="Vercel homepage">
+            <svg width="24" height="24" viewBox="0 0 76 65" fill="white" aria-hidden="true">
+              <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" />
+            </svg>
+          </a>
+        </div>
+
+      </div><!-- /row2 -->
+
+      <!-- Status bar -->
+      <div class="footer__status">
+        <span class="footer__status-dot" aria-hidden="true"></span>
+        <a href="https://www.vercel-status.com" class="footer__status-text" target="_blank" rel="noopener noreferrer">
+          ALL SYSTEMS NORMAL.
+        </a>
+      </div>
+
+    </div><!-- /footer__inner -->
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
